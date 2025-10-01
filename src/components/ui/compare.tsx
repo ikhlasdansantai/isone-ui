@@ -5,8 +5,6 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { cn } from "@/lib/utils";
 
-// import { IconDotsVertical } from "@tabler/icons-react";
-
 interface CompareProps {
   firstImage?: string;
   secondImage?: string;
