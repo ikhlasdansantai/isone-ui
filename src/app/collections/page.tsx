@@ -1,4 +1,4 @@
-import CollectionCards from "@/components/collection-cards";
+import CollectionCards from "@/components/layouts/collection/collection-cards";
 import Heading from "@/components/ui/Heading";
 
 export default function Page() {
