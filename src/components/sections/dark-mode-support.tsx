@@ -1,5 +1,5 @@
 import DarkModeHeading from "@/components/layouts/dark-mode/dark-mode-heading";
-import ShowCompare from "@/components/show-compare";
+import ShowCompare from "@/components/ui/show-compare";
 
 export default function DarkModeSupport() {
   return (

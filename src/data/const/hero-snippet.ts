@@ -1,4 +1,4 @@
-import CodePreview from "@/components/code-preview";
+import CodePreview from "@/components/ui/code-preview";
 import { MDXComponents } from "mdx/types";
 
 export const HeroSnippetComponent: MDXComponents = {

@@ -1,4 +1,4 @@
-import BlogCard from "@/components/blog-card";
+import BlogCard from "@/components/ui/blog-card";
 import { getPosts } from "@/lib/get-post";
 
 export default function CtaBlogs() {
