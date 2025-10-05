@@ -1,16 +1,12 @@
 "use client";
-import FigmaCursor from "@/components/figma-cursor";
+import FigmaCursor from "@/components/ui/figma-cursor";
 import { motion } from "motion/react";
 
 export default function CtaHeading() {
   return (
     <div className="titles max-w-lg mx-auto text-center mt-4">
-      <h2 className="text-balance mx-auto font-semibold max-[350px]:text-xl max-sm:text-3xl sm:text-5xl leading-normal">
-        Be part of this open source journey
-      </h2>
-      <p className="mt-4 text-muted-foreground">
-        Read the guide below and start contributing today.
-      </p>
+      <h2 className="text-balance mx-auto font-semibold max-[350px]:text-xl max-sm:text-3xl sm:text-5xl leading-normal">Be part of this open source journey</h2>
+      <p className="mt-4 text-muted-foreground">Read the guide below and start contributing today.</p>
       <motion.div
         animate={{
           y: ["-8rem", "-10rem", "-9.5rem", "-9.5rem", "-8rem"],
