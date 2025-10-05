@@ -1,8 +1,7 @@
-import MdxLayout from "@/app/mdx-layout";
-import React from "react";
 import MdxClientProvider from "@/components/layouts/markdown/mdx-client-provider";
 import CodeExample from "./HeroCodeExample.mdx";
 import { baseMDXComponents } from "@/data/const/base-mdx-component";
+import MdxLayout from "@/components/layouts/markdown/mdx-layout";
 
 export default function HeroComponentSnippet() {
   return (

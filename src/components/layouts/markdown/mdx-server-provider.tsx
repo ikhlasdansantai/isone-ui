@@ -1,8 +1,8 @@
-import MdxLayout from "@/app/mdx-layout";
 import { MDXServerProviderProps } from "@/data/types/mdx-context-prodiver.interface";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypePrettyCode from "rehype-pretty-code";
 import remarkGfm from "remark-gfm";
+import MdxLayout from "./mdx-layout";
 
 export default async function MdxServerProvider({
   className,

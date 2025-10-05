@@ -1,6 +1,6 @@
-import MdxLayout from "@/app/mdx-layout";
 import { MDXClientProviderProps } from "@/data/types/mdx-context-prodiver.interface";
 import { MDXProvider } from "@mdx-js/react";
+import MdxLayout from "./mdx-layout";
 
 export default function MdxClientProvider({
   className,

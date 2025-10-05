@@ -1,4 +1,4 @@
-import CollectionCard from "@/components/collection-card";
+import CollectionCard from "@/components/layouts/collection/collection-card";
 import { getCollections } from "@/lib/get-collections";
 
 export default function BrowseComponentCards() {
