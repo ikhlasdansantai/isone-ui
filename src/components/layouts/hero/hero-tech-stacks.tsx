@@ -1,4 +1,4 @@
-import { HERO_TECH_IMAGE } from "@/data/statics";
+import { HERO_TECH_IMAGE } from "@/data/const/hero-tech-image";
 import Image from "next/image";
 
 export default function HeroTechStack() {
