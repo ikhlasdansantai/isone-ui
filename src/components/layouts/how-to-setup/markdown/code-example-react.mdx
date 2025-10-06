@@ -1,5 +1,23 @@
+<CodePreview>
 ```tsx
-<figure className="rounded-md size-6">
-  <img src="example.com" className="block max-w-full object-cover" />
-</figure>
+const wifes = [
+    "https://i.pinimg.com/736x/d5/f8/fd/d5f8fd1c39eaed2bfabf95a3dcbc8cfc.jpg",
+    "https://i.pinimg.com/736x/04/89/75/04897577225e3155d507b05dd8a35e17.jpg",
+    "https://i.pinimg.com/736x/6e/3e/dd/6e3edd809c73af19bef6ed7d648d00ee.jpg"
+    ];
+
+export default function ProfileCard() {
+  return (
+    <>
+      {wifes.map((wife, i) => (
+        <div key={i} className="cardo relative w-[25rem] p-0 rounded-2xl overflow-hidden shadow-md outline-0 cursor-pointer group">
+            <figure>
+              <img src={wife} className="aspect-[2/3] object-cover block" />
+            </figure>
+        </div>
+      ))}
+    </>
+  );
+}
 ```
+</CodePreview>
