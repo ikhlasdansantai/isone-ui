@@ -9,7 +9,7 @@ export default function CollectionCard({
 }: CollectionCardProps) {
   return (
     <Link
-      href={`/collection/${title}`}
+      href={`/collection/${title.toLowerCase()}`}
       className="transition duration-150 hover:-translate-y-2 w-full"
       prefetch
     >
