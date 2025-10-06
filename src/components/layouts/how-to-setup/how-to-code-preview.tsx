@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
-import RenderHtmlPreview from "@/markdown/home/code-example-html.mdx";
-import RenderReactPreview from "@/markdown/home/code-example-react.mdx";
-import RenderSveltePreview from "@/markdown/home/code-example-svelte.mdx";
-import RenderVuePreview from "@/markdown/home/code-example-vue.mdx";
+import RenderHtmlPreview from "./markdown/code-example-html.mdx";
+import RenderReactPreview from "./markdown/code-example-react.mdx";
+import RenderSveltePreview from "./markdown/code-example-svelte.mdx";
+import RenderVuePreview from "./markdown/code-example-vue.mdx";
 import MdxServerProvider from "../markdown/mdx-client-provider";
-import { baseMDXComponents } from "@/data/const/base-mdx-component";
+import { baseMDXComponents } from "../../../data/const/base-mdx-component";
 
 export default function HowToCodePreview({ currTech }: { currTech: string }) {
   return (
