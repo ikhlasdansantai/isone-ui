@@ -1,0 +1,430 @@
+<CodeGroup name="freelancer-card">
+```html
+<section class="flex items-center justify-center h-screen">
+  <div class="card hover:-translate-y-2 transition duration-150 cursor-pointer max-w-80 w-full shadow-md p-6 flex flex-col items-center justify-center border border-[#bcc0cc] rounded-lg text-center gap-6 bg-white">
+    <div class="card-header space-y-4">
+      <figure class="rounded-full size-24 mx-auto relative">
+        <span class="block border-[#8839ef] border-2 top-0 left-0 right-0 bottom-0 z-10 rounded-full size-24 absolute scale-110"></span>
+        <img src="https://i.pinimg.com/736x/e6/58/ff/e658ff5c822907e21094d8907a61f255.jpg" alt="product-image" class="aspect-square object-cover object-top rounded-full overflow-hidden" />
+      </figure>
+
+      <div class="card-profile">
+        <b class="text-xl text-[#4c4f69]">Kim Leeseo</b>
+        <p class="text-[#6c6f85]">Intermediate</p>
+      </div>
+    </div>
+
+    <div class="status grid grid-cols-2 justify-between items-stretch w-[90%] relative gap-10">
+      <div class="box">
+        <b class="text-[#4c4f69] text-2xl">24</b>
+        <p class="text-[#6c6f85] mt-1 text-sm">Projects</p>
+      </div>
+      <span class="block w-[1.5px] bg-[#dce0e8] rounded-sm absolute right-0 left-0 top-0 bottom-0 mx-auto"></span>
+      <div class="box">
+        <b class="text-[#4c4f69] text-2xl">3,399</b>
+        <p class="text-[#6c6f85] mt-1 text-sm">Followers</p>
+      </div>
+    </div>
+
+    <button class="px-4 py-3 rounded-md bg-[#8839ef] hover:bg-[#8839ef]/85 text-white block w-full cursor-pointer">Follow</button>
+
+  </div>
+</section>
+
+````
+
+```tsx
+export default function ProfileCard() {
+  return (
+    <section className="flex items-center justify-center h-screen">
+      <div className="card hover:-translate-y-2 transition duration-150 cursor-pointer max-w-80 w-full shadow-md p-6 flex flex-col items-center justify-center border border-[#bcc0cc] rounded-lg text-center gap-6 bg-white">
+        <div className="card-header space-y-4">
+          <figure className="rounded-full size-24 mx-auto relative">
+            <span className="block border-[#8839ef] border-2 top-0 left-0 right-0 bottom-0 z-10 rounded-full size-24 absolute scale-110" />
+            <img
+              src="https://i.pinimg.com/736x/e6/58/ff/e658ff5c822907e21094d8907a61f255.jpg"
+              alt="profile-image"
+              className="aspect-square object-cover object-top rounded-full overflow-hidden"
+            />
+          </figure>
+          <div className="card-profile">
+            <b className="text-xl text-[#4c4f69]">Kim Leeseo</b>
+            <p className="text-[#6c6f85]">Intermediate</p>
+          </div>
+        </div>
+        <div className="status grid grid-cols-2 justify-between items-stretch w-[90%] relative gap-10">
+          <div className="box">
+            <b className="text-[#4c4f69] text-2xl">24</b>
+            <p className="text-[#6c6f85] mt-1 text-sm">Projects</p>
+          </div>
+          <span className="block w-[1.5px] bg-[#dce0e8] rounded-sm absolute right-0 left-0 top-0 bottom-0 mx-auto" />
+          <div className="box">
+            <b className="text-[#4c4f69] text-2xl">3,399</b>
+            <p className="text-[#6c6f85] mt-1 text-sm">Followers</p>
+          </div>
+        </div>
+        <button className="px-4 py-3 rounded-md bg-[#8839ef] hover:bg-[#8839ef]/85 text-white block w-full cursor-pointer">
+          Follow
+        </button>
+      </div>
+    </section>
+  );
+}
+````
+
+```vue
+<template>
+  <section className="flex items-center justify-center h-screen">
+    <div className="card hover:-translate-y-2 transition duration-150 cursor-pointer max-w-80 w-full shadow-md p-6 flex flex-col items-center justify-center border border-[#bcc0cc] rounded-lg text-center gap-6 bg-white">
+      <div className="card-header space-y-4">
+        <figure className="rounded-full size-24 mx-auto relative">
+          <span className="block border-[#8839ef] border-2 top-0 left-0 right-0 bottom-0 z-10 rounded-full size-24 absolute scale-110" />
+          <img src="https://i.pinimg.com/736x/e6/58/ff/e658ff5c822907e21094d8907a61f255.jpg" alt="profile-image" className="aspect-square object-cover object-top rounded-full overflow-hidden" />
+        </figure>
+        <div className="card-profile">
+          <b className="text-xl text-[#4c4f69]">Kim Leeseo</b>
+          <p className="text-[#6c6f85]">Intermediate</p>
+        </div>
+      </div>
+      <div className="status grid grid-cols-2 justify-between items-stretch w-[90%] relative gap-10">
+        <div className="box">
+          <b className="text-[#4c4f69] text-2xl">24</b>
+          <p className="text-[#6c6f85] mt-1 text-sm">Projects</p>
+        </div>
+        <span className="block w-[1.5px] bg-[#dce0e8] rounded-sm absolute right-0 left-0 top-0 bottom-0 mx-auto" />
+        <div className="box">
+          <b className="text-[#4c4f69] text-2xl">3,399</b>
+          <p className="text-[#6c6f85] mt-1 text-sm">Followers</p>
+        </div>
+      </div>
+      <button className="px-4 py-3 rounded-md bg-[#8839ef] hover:bg-[#8839ef]/85 text-white block w-full cursor-pointer">Follow</button>
+    </div>
+  </section>
+</template>
+```
+
+```svelte
+  <section className="flex items-center justify-center h-screen">
+      <div className="card hover:-translate-y-2 transition duration-150 cursor-pointer max-w-80 w-full shadow-md p-6 flex flex-col items-center justify-center border border-[#bcc0cc] rounded-lg text-center gap-6 bg-white">
+        <div className="card-header space-y-4">
+          <figure className="rounded-full size-24 mx-auto relative">
+            <span className="block border-[#8839ef] border-2 top-0 left-0 right-0 bottom-0 z-10 rounded-full size-24 absolute scale-110" />
+            <img
+              src="https://i.pinimg.com/736x/e6/58/ff/e658ff5c822907e21094d8907a61f255.jpg"
+              alt="profile-image"
+              className="aspect-square object-cover object-top rounded-full overflow-hidden"
+            />
+          </figure>
+          <div className="card-profile">
+            <b className="text-xl text-[#4c4f69]">Kim Leeseo</b>
+            <p className="text-[#6c6f85]">Intermediate</p>
+          </div>
+        </div>
+        <div className="status grid grid-cols-2 justify-between items-stretch w-[90%] relative gap-10">
+          <div className="box">
+            <b className="text-[#4c4f69] text-2xl">24</b>
+            <p className="text-[#6c6f85] mt-1 text-sm">Projects</p>
+          </div>
+          <span className="block w-[1.5px] bg-[#dce0e8] rounded-sm absolute right-0 left-0 top-0 bottom-0 mx-auto" />
+          <div className="box">
+            <b className="text-[#4c4f69] text-2xl">3,399</b>
+            <p className="text-[#6c6f85] mt-1 text-sm">Followers</p>
+          </div>
+        </div>
+        <button className="px-4 py-3 rounded-md bg-[#8839ef] hover:bg-[#8839ef]/85 text-white block w-full cursor-pointer">
+          Follow
+        </button>
+      </div>
+    </section>
+```
+
+</CodeGroup>
+
+<CodeGroup name="profile-card">
+```html
+  <div class="cardo relative w-[25rem] p-0 rounded-2xl overflow-hidden shadow-md border outline-0 cursor-pointer group">
+      <div class="p-0">
+        <figure>
+          <img src="https://i.pinimg.com/736x/d5/f8/fd/d5f8fd1c39eaed2bfabf95a3dcbc8cfc.jpg" class="aspect-[2/3] object-cover block" />
+        </figure>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 w-full z-100">
+        <div class="flex items-center justify-between">
+          <p class="text-3xl text-white">Gaeul</p>
+          <button>Singer & Dancer</button>
+        </div>
+        <p class="text-gray-300 text-sm leading-relaxed mt-6">못 기다린대 못 돼버린 내 맘이 겁 따윈 없는 척하지 마 너 감히</p>
+        <button class="w-full mt-4 rounded-xl py-2 bg-white hover:bg-white/90 text-slate-950 cursor-pointer font-medium text-lg -tracking-tighter">Vote</button>
+      </div>
+      <span class="inline-block absolute left-0 right-0 bottom-0 h-[40%] transition-all duration-500 backdrop-blur-[2px] bg-gradient-to-b from-transparent to-background group-hover:h-[50%]"></span>
+    </div>
+```
+
+```tsx
+export default function ProfileCard() {
+  return (
+    <div className="cardo relative w-[25rem] p-0 rounded-2xl overflow-hidden shadow-md border outline-0 cursor-pointer group">
+      <div className="p-0">
+        <figure>
+          <img src="https://i.pinimg.com/736x/d5/f8/fd/d5f8fd1c39eaed2bfabf95a3dcbc8cfc.jpg" className="aspect-[2/3] object-cover block" />
+        </figure>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 p-6 w-full z-100">
+        <div className="flex items-center justify-between">
+          <p className="text-3xl text-white">Gaeul</p>
+          <button>Singer & Dancer</button>
+        </div>
+        <p className="text-gray-300 text-sm leading-relaxed mt-6">못 기다린대 못 돼버린 내 맘이 겁 따윈 없는 척하지 마 너 감히</p>
+        <button className="w-full mt-4 rounded-xl py-2 bg-white hover:bg-white/90 text-slate-950 cursor-pointer font-medium text-lg -tracking-tighter">Vote</button>
+      </div>
+
+      <span className="inline-block absolute left-0 right-0 bottom-0 h-[40%] transition-all duration-500 backdrop-blur-[2px] bg-gradient-to-b from-transparent to-background group-hover:h-[50%]" />
+    </div>
+  );
+}
+```
+
+```vue
+<script lang="ts" setup>
+const count = state(0);
+</script>
+
+<template>
+  <div className="cardo relative w-[25rem] p-0 rounded-2xl overflow-hidden shadow-md border outline-0 cursor-pointer group">
+    <div className="p-0">
+      <figure>
+        <img src="https://i.pinimg.com/736x/d5/f8/fd/d5f8fd1c39eaed2bfabf95a3dcbc8cfc.jpg" className="aspect-[2/3] object-cover block" />
+      </figure>
+    </div>
+    <div className="absolute bottom-0 left-0 right-0 p-6 w-full z-100">
+      <div className="flex items-center justify-between">
+        <p className="text-3xl text-white">Gaeul</p>
+        <button>Singer & Dancer</button>
+      </div>
+      <p className="text-gray-300 text-sm leading-relaxed mt-6">못 기다린대 못 돼버린 내 맘이 겁 따윈 없는 척하지 마 너 감히</p>
+      <button className="w-full mt-4 rounded-xl py-2 bg-white hover:bg-white/90 text-slate-950 cursor-pointer font-medium text-lg -tracking-tighter">Vote</button>
+    </div>
+
+    <span className="inline-block absolute left-0 right-0 bottom-0 h-[40%] transition-all duration-500 backdrop-blur-[2px] bg-gradient-to-b from-transparent to-background group-hover:h-[50%]" />
+  </div>
+</template>
+```
+
+```svelte
+<div className="cardo relative w-[25rem] p-0 rounded-2xl overflow-hidden shadow-md border outline-0 cursor-pointer group">
+  <div className="p-0">
+      <figure>
+        <img src="https://i.pinimg.com/736x/d5/f8/fd/d5f8fd1c39eaed2bfabf95a3dcbc8cfc.jpg" className="aspect-[2/3] object-cover block" />
+      </figure>
+    </div>
+      <div className="absolute bottom-0 left-0 right-0 p-6 w-full z-100">
+        <div className="flex items-center justify-between">
+          <p className="text-3xl text-white">Gaeul</p>
+          <button>Singer & Dancer</button>
+        </div>
+        <p className="text-gray-300 text-sm leading-relaxed mt-6">못 기다린대 못 돼버린 내 맘이 겁 따윈 없는 척하지 마 너 감히</p>
+        <button className="w-full mt-4 rounded-xl py-2 bg-white hover:bg-white/90 text-slate-950 cursor-pointer font-medium text-lg -tracking-tighter">Vote</button>
+      </div>
+      <span className="inline-block absolute left-0 right-0 bottom-0 h-[40%] transition-all duration-500 backdrop-blur-[2px] bg-gradient-to-b from-transparent to-background group-hover:h-[50%]" />
+</div>
+```
+
+</CodeGroup>
+
+<CodeGroup name="product-card-with-rating">
+```html
+<div class="card hover:-translate-y-2 transition duration-150 cursor-pointer">
+  <figure class="rounded-md overflow-hidden">
+    <img src="https://plus.unsplash.com/premium_photo-1670537994863-5ad53a3214e0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    alt="product-image"
+    class="aspect-square object-cover object-center" />
+  </figure>
+  <div class="product-titles mt-4 space-y-3">
+    <b class="text-xl block">Pafrume-in</b>
+    <div class="product-rating flex items-center gap-4">
+      <div class="stars flex items-center gap-1">
+        <figure class="size-5 text-yellow-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+            />
+          </svg>
+        </figure>
+        <figure class="size-5 text-yellow-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+            />
+          </svg>
+        </figure>
+        <figure class="size-5 text-yellow-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+            />
+          </svg>
+        </figure>
+        <figure class="size-5 text-yellow-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+            />
+          </svg>
+        </figure>
+
+        <figure class="size-5 text-yellow-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+          </svg>
+        </figure>
+      </div>
+
+      <p class="text-muted-foreground"><b>4.7/</b> 5</p>
+    </div>
+    <p class="text-xl text-muted-foreground">$180</p>
+
+  </div>
+</div>
+```
+
+```tsx
+export default function ProductPage() {
+  return (
+    <div className="card hover:-translate-y-2">
+      <figure className="rounded-md overflow-hidden">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1670537994863-5ad53a3214e0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="product-image"
+          className="aspect-square object-cover object-center"
+        />
+      </figure>
+      <div className="product-titles mt-4 space-y-3">
+        <b className="text-xl block">Pafrume-in</b>
+        <div className="product-rating flex items-center gap-4">
+          <div className="stars flex items-center gap-1">
+            {Array.from({ length: 4 }, (_, i) => (
+              <figure className="size-5 text-yellow-500">
+                <svg xmlns="http://www.w3.org/2000/svg" className="block max-w-full" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                  />
+                </svg>
+              </figure>
+            ))}
+            <figure className="size-5 text-yellow-500">
+              <svg xmlns="http://www.w3.org/2000/svg" className="block max-w-full" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+              </svg>
+            </figure>
+          </div>
+          <p className="text-muted-foreground">
+            <b>4.7/</b> 5
+          </p>
+        </div>
+        <p className="text-xl text-muted-foreground">$180</p>
+      </div>
+    </div>
+  );
+}
+```
+
+```vue
+<template>
+  <div class="card hover:-translate-y-2 transition duration-300 cursor-pointer max-w-sm">
+    <figure class="rounded-md overflow-hidden">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1670537994863-5ad53a3214e0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="product-image"
+        class="aspect-square object-cover object-center w-full"
+      />
+    </figure>
+    <div class="product-titles mt-4 space-y-3">
+      <b class="text-xl block">Pafrume-in</b>
+      <div class="product-rating flex items-center gap-4">
+        <div class="stars flex items-center gap-1">
+          <figure v-for="n in 4" :key="n" class="size-5 text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+              />
+            </svg>
+          </figure>
+          <figure class="size-5 text-yellow-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block max-w-full" viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+            </svg>
+          </figure>
+        </div>
+        <p class="text-muted-foreground"><b>4.7/</b> 5</p>
+      </div>
+      <p class="text-xl text-muted-foreground">$180</p>
+    </div>
+  </div>
+</template>
+```
+
+```svelte
+<script>
+  const fullStarsCount = 4;
+</script>
+
+<div class="card hover:-translate-y-2 transition duration-300 cursor-pointer max-w-sm">
+  <figure class="rounded-md overflow-hidden">
+    <img
+      src="https://plus.unsplash.com/premium_photo-1670537994863-5ad53a3214e0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="product-image"
+      class="aspect-square object-cover object-center w-full"
+    />
+  </figure>
+  <div class="product-titles mt-4 space-y-3">
+    <b class="text-xl block">Pafrume-in</b>
+    <div class="product-rating flex items-center gap-4">
+      <div class="stars flex items-center gap-1">
+
+        {#each Array(fullStarsCount) as _, i (i)}
+          <figure class="size-5 text-yellow-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="block max-w-full"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+              />
+            </svg>
+          </figure>
+        {/each}
+        <figure class="size-5 text-yellow-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="block max-w-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+            />
+          </svg>
+        </figure>
+      </div>
+      <p class="text-muted-foreground">
+        <b>4.7/</b> 5
+      </p>
+    </div>
+    <p class="text-xl text-muted-foreground">$180</p>
+  </div>
+</div>
+```
+
+</CodeGroup>
