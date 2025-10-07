@@ -75,7 +75,7 @@ export default function PreviewCollection({
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
           </head>
-          <body class="p-4 font-sans">
+          <body class="p-4 font-sans bg-[#f5f5ff]">
           ${componentHtml}
           </body>
         </html>
