@@ -29,7 +29,7 @@ export default function CodePreview({
       <Button
         size="sm"
         onClick={handleCopy}
-        className="absolute right-6 top-6 text-xs rounded bg-muted hover:bg-muted/60 text-foreground hover:text-foreground/60 cursor-pointer"
+        className="absolute right-3 top-3 text-xs rounded bg-muted hover:bg-muted/60 text-foreground hover:text-foreground/60 cursor-pointer"
       >
         {copied ? "Copied!" : <CopyIcon size={16} />}
       </Button>
