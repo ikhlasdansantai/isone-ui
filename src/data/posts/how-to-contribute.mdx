@@ -1,0 +1,50 @@
+---
+title: This is how to contribute to isoneui
+description: Ready to start contributing? Let's walk through now, we can help you contribute
+date: "2025-09-30"
+author: ikhlasdansantai
+thumbnail: "/posts/how-to-contribute.png"
+---
+
+![blog-demo-image](/posts/how-to-contribute.png)
+
+First of all, thanks for even thinking about contributing!
+**Isone UI** started as a personal project, but the goal is to grow it together.
+Your ideas, fixes, and improvements are what make this project valuable.
+
+#### 🐛 Spot a Bug or Have an Idea?
+
+Sometimes you might stumble on something that feels a bit off, maybe it’s just a small typo, a weird accessibility bug, a slow bit of performance, or simply something that feels confusing. Don’t overthink it, just open an issue and let’s talk it through. Even the tiniest fix can make a difference, and all those little details add up to make **Isone UI** better for everyone.
+
+#### Want to Add or Improve Something?
+
+Got an idea for a shiny new component or think you can make an existing one even cooler? Go for it 😎! But before you jump straight into coding, create an issue so we can chat about your idea. For new components, sharing example designs is helpful.
+
+**Pull Request Process**
+
+When you send in a pull request, it’ll always go through a review before it gets merged. Feedback is totally normal—think of it as part of the process to keep things sharp. Don’t sweat it if you’re asked to tweak a few things. If the same notes are still hanging around after the third review, the PR will be closed, but if new feedback pops up later, no big deal—just adjust and push it up again.
+
+#### Setting Up IsoneUI Locally
+
+Running Isone UI locally is super easy.
+
+```bash
+git clone git@github.com:markmead/hyperui.git
+pnpm install
+pnpm dev
+```
+
+That’s all you need to get the project live on your machine so you can play around, test stuff, or build something new right away. 🚀
+
+#### Adding a New Component
+
+For example, to add a new card component:
+
+- Create a new file in `/public/components/cards/naming-your-file.html`
+- Register your snippet inside
+  `/src/data/snippets/cards.mdx`
+- Wrap it up with `<CodeGroup name="naming-your-file">`. The name prop links your snippet to its live preview, so type carefully (and maybe sip some water first to avoid typos).
+
+💡 **Pro tip**: if you’ve never touched a certain framework and don’t know how the snippet should look. Don't stress, ChatGPT’s got your back. Just drop a prompt and boom, you’re set. 🚀
+
+[google com](/collection/cards)
