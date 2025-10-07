@@ -16,8 +16,8 @@ export default function CollectionCards() {
         />
       ))}
 
-      <div className="aspect-video p-4 border rounded-md">
-        <span className="inline-flex items-center justify-center border-dashed border-2 relative h-full w-full aspect-video">
+      <div className="p-4 pb-3 border rounded-md w-full">
+        <span className="inline-flex items-center justify-center border-dashed border-2 relative aspect-video object-cover max-w-full w-full h-fit">
           <ClockArrowDownIcon className="absolute left-0 top-0 bottom-0 right-0 size-7 m-auto text-muted-foreground" />
         </span>
       </div>
