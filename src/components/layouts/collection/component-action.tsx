@@ -93,12 +93,12 @@ export default function ComponentAction({
           </>
         )}
       </motion.div>
-      <p className="text-xs not-prose">
+      {/* <p className="text-xs not-prose">
         creator:{" "}
         <Link href="/" className="underline">
           ikhlasdansantai
         </Link>
-      </p>
+      </p> */}
     </div>
   );
 }
