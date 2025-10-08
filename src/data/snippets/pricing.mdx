@@ -1,10 +1,534 @@
 <CodeGroup name="floating-price">
 ```html
-on:introstart="{() => status = 'introstart'}"
+<main class="flex min-h-screen items-center justify-center bg-[#f5f5ff] mx-auto">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
+    <div class="card rounded-lg bg-white p-8">
+      <b class="text-2xl text-[#2a2a4a]">$10<span class="text-sm font-medium text-[#6c6c8a]"> /month</span></b>
+
+      <div class="price__details mt-8">
+        <b class="text-2xl text-[#2a2a4a]">Bootstrap</b>
+        <p class="mt-2 text-sm font-medium text-[#6c6c8a]">For most businesses that wnat to optimize web queries</p>
+
+        <ul class="mt-8 space-y-2 text-sm font-medium text-[#6c6c8a]">
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            All limited links
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Own analytics platform
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Chat support
+          </li>
+        </ul>
+        <button class="mt-8 block w-full cursor-pointer rounded-md bg-[#d8e6ff] px-4 py-3 font-semibold text-[#5d5fef] hover:bg-[#d8e6ff]/85">Downgrade</button>
+      </div>
+    </div>
+    <div class="card bg-[#6e56cf] p-8 sm:rounded-lg md:-translate-y-10 md:shadow-2xl">
+      <b class="text-2xl text-white">$120<span class="text-sm font-medium text-[#f0f0fa]"> /month</span></b>
+      <div class="price__details mt-8">
+        <b class="text-2xl text-white">ReactJs</b>
+        <p class="mt-2 text-sm font-medium text-[#f0f0fa]">For most businesses that want to optimize web</p>
+        <ul class="mt-8 space-y-2 text-sm font-medium text-[#f0f0fa]">
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1 !text-[#4a4080]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            All limited links
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1 !text-[#4a4080]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Own analytics platform
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1 !text-[#4a4080]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Chat support</li>
+        </ul>
+      </div>
+      <button class="mt-8 block w-full cursor-pointer rounded-md bg-white px-4 py-3 font-semibold text-[#6e56cf] hover:bg-white/85">Upgrade</button>
+    </div>
+    <div class="card rounded-lg bg-white p-8">
+      <b class="text-2xl text-[#2a2a4a]">$220<span class="text-sm font-medium text-[#6c6c8a]"> /month</span></b>
+
+      <div class="price__details mt-8">
+        <b class="text-2xl text-[#2a2a4a]">Nextjs</b>
+        <p class="mt-2 text-sm font-medium text-[#6c6c8a]">For most businesses that wnat to optimize web queries</p>
+        <ul class="mt-8 space-y-2 text-sm font-medium text-[#6c6c8a]">
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            All limited links
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Own analytics platform
+          </li>
+          <li class="flex items-center gap-2">
+            <figure class="size-5 rounded-full bg-[#e4dfff] p-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="block max-w-full"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-icon lucide-check"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </figure>
+            Chat support</li>
+        </ul>
+        <button class="mt-8 block w-full cursor-pointer rounded-md bg-[#d8e6ff] px-4 py-3 font-semibold text-[#5d5fef] hover:bg-[#d8e6ff]/85">Upgrade</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+```
+
+```tsx
+  interface Plan {
+    name: string;
+    price: number;
+    interval: string;
+    description: string;
+    features: string[];
+    isHighlighted: boolean;
+    buttonText: string;
+    buttonClass: string;
+    priceClass: string;
+    textColor: string;
+    bgColor: string;
+  }
+  const PLANS: Plan[] = [
+    {
+      name: "Bootstrap",
+      price: 10,
+      interval: "/month",
+      description: "For most businesses that want to optimize web queries",
+      features: ["All limited links", "Own analytics platform", "Chat support"],
+      isHighlighted: false,
+      buttonText: "Downgrade",
+      buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+      priceClass: "text-[#2a2a4a]",
+      textColor: "text-[#6c6c8a]",
+      bgColor: "bg-white",
+    },
+    {
+      name: "ReactJs",
+      price: 120,
+      interval: "/month",
+      description: "For most businesses that want to optimize web",
+      features: ["All limited links", "Own analytics platform", "Chat support"],
+      isHighlighted: true,
+      buttonText: "Upgrade",
+      buttonClass: "bg-white text-[#6e56cf] hover:bg-white/85",
+      priceClass: "text-white",
+      textColor: "text-[#f0f0fa]",
+      bgColor: "bg-[#6e56cf]",
+    },
+    {
+      name: "Nextjs",
+      price: 220,
+      interval: "/month",
+      description: "For most businesses that want to optimize web queries",
+      features: ["All limited links", "Own analytics platform", "Chat support"],
+      isHighlighted: false,
+      buttonText: "Upgrade",
+      buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+      priceClass: "text-[#2a2a4a]",
+      textColor: "text-[#6c6c8a]",
+      bgColor: "bg-white",
+    },
+  ];
+  const CheckIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="block max-w-full" {...props}>
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+
+  export default function PricingCards() {
+    return (
+      <main className="flex min-h-screen items-center justify-center max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
+          {PLANS.map((plan) => {
+            const cardClasses = `${plan.bgColor} p-8 sm:rounded-lg card ${plan.isHighlighted ? "md:-translate-y-10 md:shadow-2xl" : "rounded-lg"}`;
+            return (
+              <div key={plan.name} className={cardClasses}>
+                <b className={`text-2xl ${plan.priceClass}`}>
+                  ${plan.price}
+                  <span className={`text-sm font-medium ${plan.textColor}`}>{plan.interval}</span>
+                </b>
+                <div className="price__details mt-8">
+                  <b className={`text-2xl ${plan.priceClass}`}>{plan.name}</b>
+                  <p className={`mt-2 text-sm font-medium ${plan.textColor}`}>{plan.description}</p>
+                  <ul className={`mt-8 space-y-2 text-sm font-medium ${plan.textColor}`}>
+                    {plan.features.map((feature, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <figure className={`size-5 rounded-full bg-[#e4dfff] p-1 ${plan.isHighlighted ? "text-[#4a4080]" : ""}`}>
+                          <CheckIcon />
+                        </figure>
+                        <p>{feature}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  <button className={`mt-8 block w-full cursor-pointer rounded-md px-4 py-3 font-semibold ${plan.buttonClass}`}>{plan.buttonText}</button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </main>
+    );
+  }
 ```
 
 ```vue
-on:introstart="{() => status = 'introstart'}"
+<script setup lang="ts">
+const CheckIcon = {
+  template: `
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="block max-w-full"
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  `,
+}
+
+interface Plan {
+  name: string
+  price: number
+  interval: string
+  description: string
+  features: string[]
+  isHighlighted: boolean
+  buttonText: string
+  buttonClass: string
+  priceClass: string
+  textColor: string
+  bgColor: string
+}
+
+const plans: Plan[] = [
+  {
+    name: 'Bootstrap',
+    price: 10,
+    interval: '/month',
+    description: 'For most businesses that want to optimize web queries',
+    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    isHighlighted: false,
+    buttonText: 'Downgrade',
+    buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
+    priceClass: 'text-[#2a2a4a]',
+    textColor: 'text-[#6c6c8a]',
+    bgColor: 'bg-white',
+  },
+  {
+    name: 'ReactJs',
+    price: 120,
+    interval: '/month',
+    description: 'For most businesses that want to optimize web',
+    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    isHighlighted: true,
+    buttonText: 'Upgrade',
+    buttonClass: 'bg-white text-[#6e56cf] hover:bg-white/85',
+    priceClass: 'text-white',
+    textColor: 'text-[#f0f0fa]',
+    bgColor: 'bg-[#6e56cf]',
+  },
+  {
+    name: 'Nextjs',
+    price: 220,
+    interval: '/month',
+    description: 'For most businesses that want to optimize web queries',
+    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    isHighlighted: false,
+    buttonText: 'Upgrade',
+    buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
+    priceClass: 'text-[#2a2a4a]',
+    textColor: 'text-[#6c6c8a]',
+    bgColor: 'bg-white',
+  },
+]
+</script>
+
+<template>
+  <main class="flex min-h-screen items-center justify-center max-w-5xl mx-auto">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
+      <div
+        v-for="plan in plans"
+        :key="plan.name"
+        :class="[
+          'card p-8 sm:rounded-lg',
+          plan.bgColor,
+          {
+            'rounded-lg': !plan.isHighlighted,
+            'md:-translate-y-10 md:shadow-2xl': plan.isHighlighted,
+          },
+        ]"
+      >
+        <b class="text-2xl" :class="plan.priceClass">
+          ${{ plan.price }}
+          <span class="text-sm font-medium" :class="plan.textColor"> {{ plan.interval }}</span>
+        </b>
+
+        <div class="price__details mt-8">
+          <b class="text-2xl" :class="plan.priceClass">{{ plan.name }}</b>
+          <p class="mt-2 text-sm font-medium" :class="plan.textColor">{{ plan.description }}</p>
+
+          <ul class="mt-8 space-y-2 text-sm font-medium" :class="plan.textColor">
+            <li v-for="feature in plan.features" :key="feature" class="flex items-center gap-2">
+              <figure
+                class="size-5 rounded-full bg-[#e4dfff] p-1"
+                :class="{
+                  '!text-[#4a4080]': plan.isHighlighted,
+                }"
+              >
+                <CheckIcon />
+              </figure>
+              <p>{{ feature }}</p>
+            </li>
+          </ul>
+          <button
+            class="mt-8 block w-full cursor-pointer rounded-md px-4 py-3 font-semibold"
+            :class="plan.buttonClass"
+          >
+            {{ plan.buttonText }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</template>
 ```
 
+```svelte
+<script lang="ts">
+  interface Plan {
+    name: string;
+    price: number;
+    interval: string;
+    description: string;
+    features: string[];
+    isHighlighted: boolean;
+    buttonText: string;
+    buttonClass: string;
+    priceClass: string;
+    textColor: string;
+    bgColor: string;
+  }
+  const plans: Plan[] = [
+    {
+      name: 'Bootstrap',
+      price: 10,
+      interval: '/month',
+      description: 'For most businesses that want to optimize web queries',
+      features: ['All limited links', 'Own analytics platform', 'Chat support'],
+      isHighlighted: false,
+      buttonText: 'Downgrade',
+      buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
+      priceClass: 'text-[#2a2a4a]',
+      textColor: 'text-[#6c6c8a]',
+      bgColor: 'bg-white',
+    },
+    {
+      name: 'ReactJs',
+      price: 120,
+      interval: '/month',
+      description: 'For most businesses that want to optimize web',
+      features: ['All limited links', 'Own analytics platform', 'Chat support'],
+      isHighlighted: true,
+      buttonText: 'Upgrade',
+      buttonClass: 'bg-white text-[#6e56cf] hover:bg-white/85',
+      priceClass: 'text-white',
+      textColor: 'text-[#f0f0fa]',
+      bgColor: 'bg-[#6e56cf]',
+    },
+    {
+      name: 'Nextjs',
+      price: 220,
+      interval: '/month',
+      description: 'For most businesses that want to optimize web queries',
+      features: ['All limited links', 'Own analytics platform', 'Chat support'],
+      isHighlighted: false,
+      buttonText: 'Upgrade',
+      buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
+      priceClass: 'text-[#2a2a4a]',
+      textColor: 'text-[#6c6c8a]',
+      bgColor: 'bg-white',
+    },
+  ];
+</script>
+
+<main class="flex min-h-screen items-center justify-center bg-[#f5f5ff] max-w-5xl mx-auto">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
+    {#each plans as plan (plan.name)}
+      <div
+        class="{plan.bgColor} p-8 sm:rounded-lg card"
+        class:rounded-lg={!plan.isHighlighted}
+        class:md:-translate-y-10={plan.isHighlighted}
+        class:md:shadow-2xl={plan.isHighlighted}
+      >
+        <b class="text-2xl {plan.priceClass}">
+          ${plan.price}
+          <span class="text-sm font-medium {plan.textColor}"> {plan.interval}</span>
+        </b>
+        <div class="price__details mt-8">
+          <b class="text-2xl {plan.priceClass}">{plan.name}</b>
+          <p class="mt-2 text-sm font-medium {plan.textColor}">{plan.description}</p>
+          <ul class="mt-8 space-y-2 text-sm font-medium {plan.textColor}">
+            {#each plan.features as feature}
+              <li class="flex items-center gap-2">
+                <figure
+                  class="size-5 rounded-full bg-[#e4dfff] p-1"
+                  class:!text-[#4a4080]={plan.isHighlighted}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="block max-w-full"
+                  >
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </figure>
+                <p>{feature}</p>
+            {/each}
+          </ul>
+          <button
+            class="mt-8 block w-full cursor-pointer rounded-md px-4 py-3 font-semibold {plan.buttonClass}"
+          >
+            {plan.buttonText}
+          </button>
+        </div>
+      </div>
+    {/each}
+  </div>
+</main>
+```
 </CodeGroup>
