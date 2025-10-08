@@ -15,7 +15,7 @@ export default function Breadcrumb({ data }: { data: BreadcrumbDataProps[] }) {
 
   return (
     <nav aria-label="Breadcrumb">
-      <ol className="flex items-center gap-1 text-sm text-gray-700 dark:text-gray-200">
+      <ol className="flex items-center gap-1 text-sm">
         <li className="flex items-center gap-1.5">
           <Link href="/" aria-label="Home">
             <HouseIcon className="size-4.5" />
