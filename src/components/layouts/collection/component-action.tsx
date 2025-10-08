@@ -23,13 +23,30 @@ export default function ComponentAction({
     ResponsiveTabProps.DESKTOP,
   );
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(
-      figureRef.current?.querySelector("code")?.innerText ?? "",
-    );
-
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
+  const handleCopy = async () => {
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        const textToCopy =
+          figureRef.current?.querySelector("code")?.innerText ?? "";
+        await navigator.clipboard.writeText(textToCopy);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500);
+      } else {
+        // console.warn("Clipboard API not supported, using fallback");
+        const textToCopy =
+          figureRef.current?.querySelector("code")?.innerText ?? "";
+        const textarea = document.createElement("textarea");
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500);
+      }
+    } catch (err) {
+      console.error("Copy failed:", err);
+    }
   };
 
   return (
