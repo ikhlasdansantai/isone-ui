@@ -28,7 +28,6 @@ export default function PreviewCollection({
         );
         const data = await htmlFile.text();
         setComponentHtml(data);
-        console.log({ data });
       } catch (error) {
         console.error(error);
       } finally {
