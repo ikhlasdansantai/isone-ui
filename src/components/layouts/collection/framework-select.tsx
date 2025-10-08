@@ -19,7 +19,7 @@ export function FrameworkSelect({
   return (
     <Select onValueChange={(value) => setState(value)}>
       <SelectTrigger
-        className="w-24 !bg-transparent"
+        className="w-24 !bg-transparent text-foreground"
         aria-labelledby="framework-label"
         defaultValue={"HTML"}
       >

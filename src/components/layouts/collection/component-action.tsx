@@ -40,7 +40,7 @@ export default function ComponentAction({
             onClick={() => setTab("preview")}
             variant="ghost"
             className={`cursor-pointer
-            ${tab === "preview" ? "bg-card shadow-md" : "!border-0 !bg-transparent text-muted-foreground"}`}
+            ${tab === "preview" ? "bg-card shadow-md text-muted-foreground" : "!border-0 !bg-transparent text-muted-foreground/60"}`}
           >
             Preview
           </Button>
@@ -48,7 +48,7 @@ export default function ComponentAction({
             onClick={() => setTab("code")}
             variant="ghost"
             className={`cursor-pointer
-            ${tab === "code" ? "bg-card shadow-md" : "!bg-transparent !border-0 text-muted-foreground"}`}
+            ${tab === "code" ? "bg-card shadow-md text-muted-foreground" : "!border-0 !bg-transparent text-muted-foreground/60"}`}
           >
             Code
           </Button>
