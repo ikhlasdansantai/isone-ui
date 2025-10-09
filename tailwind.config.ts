@@ -14,10 +14,10 @@ export default {
               color: "var(--foreground)",
               marginBottom: "em(26, 30)",
             },
-            strong: {
+            "strong, li code": {
               color: "var(--foreground)",
             },
-            p: {
+            "p, li": {
               color: "var(--muted-foreground)",
             },
             pre: {
