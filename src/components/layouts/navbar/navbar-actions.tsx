@@ -1,6 +1,6 @@
-import React from "react";
 import HamburgerMenu from "./hamburger-menu";
 import { GithubIcon } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function NavbarActions({
   active,
@@ -12,7 +12,8 @@ export default function NavbarActions({
   return (
     <div className="flex items-center gap-2 ml-auto">
       <HamburgerMenu active={active} setActive={setActive} />
-      <GithubIcon className="rounded-md size-10 border shadow-sm text-muted-foreground p-1.5 bg-white hover:bg-transparent hover:text-white" />
+      <ThemeToggle />
+      <GithubIcon className="rounded-md size-10 p-2.5 border text-muted-foreground bg-transparent hover:!bg-transparent shadow-none dark:hover:opacity-65 cursor-pointer" />
     </div>
   );
 }
