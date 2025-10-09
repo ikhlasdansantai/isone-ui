@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/sections/navbar";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
@@ -31,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,8 +41,10 @@ export default function RootLayout({
       </head>
 
       <body className={`${spaceGrotesk.className} antialiased`}>
-        <Navbar />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
