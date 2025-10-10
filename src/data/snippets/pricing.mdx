@@ -1,6 +1,6 @@
 <CodeGroup name="floating-price">
 ```html
-<main class="flex min-h-screen items-center justify-center bg-[#f5f5ff] mx-auto">
+<section class="flex min-h-screen items-center justify-center bg-[#f5f5ff] mx-auto">
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
     <div class="card rounded-lg bg-white p-8">
       <b class="text-2xl text-[#2a2a4a]">$10<span class="text-sm font-medium text-[#6c6c8a]"> /month</span></b>
@@ -196,183 +196,184 @@
       </div>
     </div>
   </div>
-</main>
-
+</section>
 ```
 
 ```tsx
-  interface Plan {
-    name: string;
-    price: number;
-    interval: string;
-    description: string;
-    features: string[];
-    isHighlighted: boolean;
-    buttonText: string;
-    buttonClass: string;
-    priceClass: string;
-    textColor: string;
-    bgColor: string;
-  }
-  const PLANS: Plan[] = [
-    {
-      name: "Bootstrap",
-      price: 10,
-      interval: "/month",
-      description: "For most businesses that want to optimize web queries",
-      features: ["All limited links", "Own analytics platform", "Chat support"],
-      isHighlighted: false,
-      buttonText: "Downgrade",
-      buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
-      priceClass: "text-[#2a2a4a]",
-      textColor: "text-[#6c6c8a]",
-      bgColor: "bg-white",
-    },
-    {
-      name: "ReactJs",
-      price: 120,
-      interval: "/month",
-      description: "For most businesses that want to optimize web",
-      features: ["All limited links", "Own analytics platform", "Chat support"],
-      isHighlighted: true,
-      buttonText: "Upgrade",
-      buttonClass: "bg-white text-[#6e56cf] hover:bg-white/85",
-      priceClass: "text-white",
-      textColor: "text-[#f0f0fa]",
-      bgColor: "bg-[#6e56cf]",
-    },
-    {
-      name: "Nextjs",
-      price: 220,
-      interval: "/month",
-      description: "For most businesses that want to optimize web queries",
-      features: ["All limited links", "Own analytics platform", "Chat support"],
-      isHighlighted: false,
-      buttonText: "Upgrade",
-      buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
-      priceClass: "text-[#2a2a4a]",
-      textColor: "text-[#6c6c8a]",
-      bgColor: "bg-white",
-    },
-  ];
-  const CheckIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="block max-w-full" {...props}>
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
-  );
-
-  export default function PricingCards() {
-    return (
-      <main className="flex min-h-screen items-center justify-center max-w-5xl mx-auto">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
-          {PLANS.map((plan) => {
-            const cardClasses = `${plan.bgColor} p-8 sm:rounded-lg card ${plan.isHighlighted ? "md:-translate-y-10 md:shadow-2xl" : "rounded-lg"}`;
-            return (
-              <div key={plan.name} className={cardClasses}>
-                <b className={`text-2xl ${plan.priceClass}`}>
-                  ${plan.price}
-                  <span className={`text-sm font-medium ${plan.textColor}`}>{plan.interval}</span>
-                </b>
-                <div className="price__details mt-8">
-                  <b className={`text-2xl ${plan.priceClass}`}>{plan.name}</b>
-                  <p className={`mt-2 text-sm font-medium ${plan.textColor}`}>{plan.description}</p>
-                  <ul className={`mt-8 space-y-2 text-sm font-medium ${plan.textColor}`}>
-                    {plan.features.map((feature, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <figure className={`size-5 rounded-full bg-[#e4dfff] p-1 ${plan.isHighlighted ? "text-[#4a4080]" : ""}`}>
-                          <CheckIcon />
-                        </figure>
-                        <p>{feature}</p>
-                      </li>
-                    ))}
-                  </ul>
-                  <button className={`mt-8 block w-full cursor-pointer rounded-md px-4 py-3 font-semibold ${plan.buttonClass}`}>{plan.buttonText}</button>
-                </div>
+interface Plan {
+  name: string;
+  price: number;
+  interval: string;
+  description: string;
+  features: string[];
+  isHighlighted: boolean;
+  buttonText: string;
+  buttonClass: string;
+  priceClass: string;
+  textColor: string;
+  bgColor: string;
+}
+const PLANS: Plan[] = [
+  {
+    name: "Bootstrap",
+    price: 10,
+    interval: "/month",
+    description: "For most businesses that want to optimize web queries",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
+    isHighlighted: false,
+    buttonText: "Downgrade",
+    buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+    priceClass: "text-[#2a2a4a]",
+    textColor: "text-[#6c6c8a]",
+    bgColor: "bg-white",
+  },
+  {
+    name: "ReactJs",
+    price: 120,
+    interval: "/month",
+    description: "For most businesses that want to optimize web",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
+    isHighlighted: true,
+    buttonText: "Upgrade",
+    buttonClass: "bg-white text-[#6e56cf] hover:bg-white/85",
+    priceClass: "text-white",
+    textColor: "text-[#f0f0fa]",
+    bgColor: "bg-[#6e56cf]",
+  },
+  {
+    name: "Nextjs",
+    price: 220,
+    interval: "/month",
+    description: "For most businesses that want to optimize web queries",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
+    isHighlighted: false,
+    buttonText: "Upgrade",
+    buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+    priceClass: "text-[#2a2a4a]",
+    textColor: "text-[#6c6c8a]",
+    bgColor: "bg-white",
+  },
+];
+const CheckIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="block max-w-full"
+    {...props}
+  >
+    <path d="M20 6 9 17l-5-5" />
+  </svg>
+);
+export default function PricingCards() {
+  return (
+    <section className="flex min-h-screen items-center justify-center max-w-5xl mx-auto">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
+        {PLANS.map((plan) => {
+          const cardClasses = `${plan.bgColor} p-8 sm:rounded-lg card ${plan.isHighlighted ? "md:-translate-y-10 md:shadow-2xl" : "rounded-lg"}`;
+          return (
+            <div key={plan.name} className={cardClasses}>
+              <b className={`text-2xl ${plan.priceClass}`}>
+                ${plan.price}
+                <span className={`text-sm font-medium ${plan.textColor}`}>
+                  {plan.interval}
+                </span>
+              </b>
+              <div className="price__details mt-8">
+                <b className={`text-2xl ${plan.priceClass}`}>{plan.name}</b>
+                <p className={`mt-2 text-sm font-medium ${plan.textColor}`}>
+                  {plan.description}
+                </p>
+                <ul
+                  className={`mt-8 space-y-2 text-sm font-medium ${plan.textColor}`}
+                >
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-center gap-2">
+                      <figure
+                        className={`size-5 rounded-full bg-[#e4dfff] p-1 ${plan.isHighlighted ? "text-[#4a4080]" : ""}`}
+                      >
+                        <CheckIcon />
+                      </figure>
+                      <p>{feature}</p>
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  className={`mt-8 block w-full cursor-pointer rounded-md px-4 py-3 font-semibold ${plan.buttonClass}`}
+                >
+                  {plan.buttonText}
+                </button>
               </div>
-            );
-          })}
-        </div>
-      </main>
-    );
-  }
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
 ```
 
 ```vue
 <script setup lang="ts">
-const CheckIcon = {
-  template: `
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="block max-w-full"
-    >
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
-  `,
-}
-
 interface Plan {
-  name: string
-  price: number
-  interval: string
-  description: string
-  features: string[]
-  isHighlighted: boolean
-  buttonText: string
-  buttonClass: string
-  priceClass: string
-  textColor: string
-  bgColor: string
+  name: string;
+  price: number;
+  interval: string;
+  description: string;
+  features: string[];
+  isHighlighted: boolean;
+  buttonText: string;
+  buttonClass: string;
+  priceClass: string;
+  textColor: string;
+  bgColor: string;
 }
-
 const plans: Plan[] = [
   {
-    name: 'Bootstrap',
+    name: "Bootstrap",
     price: 10,
-    interval: '/month',
-    description: 'For most businesses that want to optimize web queries',
-    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    interval: "/month",
+    description: "For most businesses that want to optimize web queries",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
     isHighlighted: false,
-    buttonText: 'Downgrade',
-    buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
-    priceClass: 'text-[#2a2a4a]',
-    textColor: 'text-[#6c6c8a]',
-    bgColor: 'bg-white',
+    buttonText: "Downgrade",
+    buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+    priceClass: "text-[#2a2a4a]",
+    textColor: "text-[#6c6c8a]",
+    bgColor: "bg-white",
   },
   {
-    name: 'ReactJs',
+    name: "ReactJs",
     price: 120,
-    interval: '/month',
-    description: 'For most businesses that want to optimize web',
-    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    interval: "/month",
+    description: "For most businesses that want to optimize web",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
     isHighlighted: true,
-    buttonText: 'Upgrade',
-    buttonClass: 'bg-white text-[#6e56cf] hover:bg-white/85',
-    priceClass: 'text-white',
-    textColor: 'text-[#f0f0fa]',
-    bgColor: 'bg-[#6e56cf]',
+    buttonText: "Upgrade",
+    buttonClass: "bg-white text-[#6e56cf] hover:bg-white/85",
+    priceClass: "text-white",
+    textColor: "text-[#f0f0fa]",
+    bgColor: "bg-[#6e56cf]",
   },
   {
-    name: 'Nextjs',
+    name: "Nextjs",
     price: 220,
-    interval: '/month',
-    description: 'For most businesses that want to optimize web queries',
-    features: ['All limited links', 'Own analytics platform', 'Chat support'],
+    interval: "/month",
+    description: "For most businesses that want to optimize web queries",
+    features: ["All limited links", "Own analytics platform", "Chat support"],
     isHighlighted: false,
-    buttonText: 'Upgrade',
-    buttonClass: 'bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85',
-    priceClass: 'text-[#2a2a4a]',
-    textColor: 'text-[#6c6c8a]',
-    bgColor: 'bg-white',
+    buttonText: "Upgrade",
+    buttonClass: "bg-[#d8e6ff] text-[#5d5fef] hover:bg-[#d8e6ff]/85",
+    priceClass: "text-[#2a2a4a]",
+    textColor: "text-[#6c6c8a]",
+    bgColor: "bg-white",
   },
-]
+];
 </script>
-
 <template>
   <main class="flex min-h-screen items-center justify-center max-w-5xl mx-auto">
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
@@ -390,22 +391,43 @@ const plans: Plan[] = [
       >
         <b class="text-2xl" :class="plan.priceClass">
           ${{ plan.price }}
-          <span class="text-sm font-medium" :class="plan.textColor"> {{ plan.interval }}</span>
+          <span class="text-sm font-medium" :class="plan.textColor">
+            {{ plan.interval }}</span
+          >
         </b>
-
         <div class="price__details mt-8">
           <b class="text-2xl" :class="plan.priceClass">{{ plan.name }}</b>
-          <p class="mt-2 text-sm font-medium" :class="plan.textColor">{{ plan.description }}</p>
+          <p class="mt-2 text-sm font-medium" :class="plan.textColor">
+            {{ plan.description }}
+          </p>
 
-          <ul class="mt-8 space-y-2 text-sm font-medium" :class="plan.textColor">
-            <li v-for="feature in plan.features" :key="feature" class="flex items-center gap-2">
+          <ul
+            class="mt-8 space-y-2 text-sm font-medium"
+            :class="plan.textColor"
+          >
+            <li
+              v-for="feature in plan.features"
+              :key="feature"
+              class="flex items-center gap-2"
+            >
               <figure
                 class="size-5 rounded-full bg-[#e4dfff] p-1"
                 :class="{
                   '!text-[#4a4080]': plan.isHighlighted,
                 }"
               >
-                <CheckIcon />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="block max-w-full"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
               </figure>
               <p>{{ feature }}</p>
             </li>
@@ -481,7 +503,7 @@ const plans: Plan[] = [
   ];
 </script>
 
-<main class="flex min-h-screen items-center justify-center bg-[#f5f5ff] max-w-5xl mx-auto">
+<section class="flex min-h-screen items-center justify-center bg-[#f5f5ff] max-w-5xl mx-auto">
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-lg bg-white">
     {#each plans as plan (plan.name)}
       <div
@@ -518,6 +540,7 @@ const plans: Plan[] = [
                   </svg>
                 </figure>
                 <p>{feature}</p>
+							</li>
             {/each}
           </ul>
           <button
@@ -529,6 +552,6 @@ const plans: Plan[] = [
       </div>
     {/each}
   </div>
-</main>
+</section>
 ```
 </CodeGroup>
